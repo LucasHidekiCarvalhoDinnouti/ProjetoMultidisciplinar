@@ -1,16 +1,22 @@
 # ProjetoMultidisciplinar
 16166_16174_16185
 
-(1) baixar o portable git e copiar para o pendrive
-(2) executar o git-bash.exe
-(3) configurar o home para o pendrive: 
-home=/d (se o seu pendrive for o "D:/")
-(4) gerar chave ssh:
-ssh-keygen -t rsa
-(n„o clolque senha apÛs isso, apenas Enter
+1. Baixar o portable git e copiar para o pendrive
+
+2. Executar o git-bash.exe
+
+3. Configurar o home para o pendrive: 
+ * `home=/d`
+(se o seu pendrive for o "D:/")
+
+4. Gerar chave ssh: 
+ * `ssh-keygen -t rsa`
+(n√£o clolque senha ap√≥s isso, apenas Enter
  as chaves serao geradas em "/D/.ssh/" )
-(5) colocar o conteudo do arquivo "/D/.ssh/id_rsa.pub" para uma nova chave no github:
-seÁ„o -> your Profile -> edit Profile -> SSH and GPG keys
-(6) clonar o repositorio com o comando:
-git clone git@github.com:LucasHidekiCarvalhoDinnouti/ProjetoMultidisciplinar.git
-Se tudo der certo, isso criar· uma pasta "ProjetoMultidisciplinar"
+
+5. colocar o conteudo do arquivo "/D/.ssh/id_rsa.pub" para uma nova chave no github:
+ se√ß√£o -> your Profile -> edit Profile -> SSH and GPG keys
+
+6. clonar o repositorio com o comando: 
+ * `git clone git@github.com:LucasHidekiCarvalhoDinnouti/ProjetoMultidisciplinar.git`
+ * Se tudo der certo, isso criar√° uma pasta "ProjetoMultidisciplinar"
