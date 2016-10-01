@@ -1,0 +1,90 @@
+body{
+	background-color: #f1f1f1;
+	
+}
+
+
+
+#cadCliente{
+ 
+  font-size: 20px;
+  font-family: Calibri;
+  color: #2a2a2a;
+  font-weight: 100;
+  margin-left: 30%;
+  margin-top: 2%;
+}
+
+
+
+
+input{
+	font-size: 100%;
+	font-family: calibri;
+	color: #2a2a2a;
+	font-weight: 100;
+	border-radius: 0px;
+	border-width: 1px;
+
+
+}
+
+#nCompleto{
+	width: 390px;
+}
+
+#logCliente{
+	width: 280px;
+}
+
+#pwCliente{
+	width: 280px;
+}
+
+
+
+
+p{
+height: 40px;
+}
+
+#btnCadastrar{ 
+	width: 400px;
+	height: 55px;
+    border-radius: 0px;
+    background-color: #cbcbcb;
+    border-width: 0px;
+    font-size: 24px;
+    transition: 0.2s;
+    font-weight: 100;
+}
+
+
+#btnCadastrar:hover{
+	background-color: #2a2a2a;
+	color: #cbcbcb;
+	transition: 0.5s;
+
+}
+
+#btnCadastrar:active{
+	background-color: #505050;
+	color: #cbcbcb;
+	transition: 0.3s;
+
+}
+
+
+h2{ 
+	color: red;
+	font-size: 16px;
+	font-family: Calibri;
+	font-weight: 100;
+
+}
+
+h1{
+	font-weight: 100;
+	font-size: 36px;
+
+}

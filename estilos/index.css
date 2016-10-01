@@ -1,0 +1,32 @@
+body {  
+    background-image: url(../imgs/buscaParking.png);
+    background-size: contain;
+}
+#btnCadastrar, #btnLogar { 
+    position: relative;
+    float: right;
+    left: 0%;
+	width: 40%;
+	height: 10%;
+    border-radius: 0px;
+    background-color: #cbcbcb;
+    border-width: 0px;
+    font-size: 20px;
+    transition: 0.2s;
+    font-weight: 100;
+    margin-right: 7%;
+}
+
+#btnLogar:hover, #btnCadastrar:hover{
+	background-color: #2a2a2a;
+	color: #cbcbcb;
+	transition: 0.5s;
+
+}
+
+#btnLogar:active, #btnCadastrar:active{
+	background-color: #505050;
+	color: #cbcbcb;
+	transition: 0.1s;
+
+}

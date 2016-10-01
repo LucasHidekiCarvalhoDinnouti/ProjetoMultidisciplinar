@@ -1,0 +1,45 @@
+    body {
+
+        margin-top: 40px;
+        width: 250px;
+        height: 900px;  /**/
+        background-color: #f1f1f1;
+        color: #2a2a2a;
+        font-family: calibri;
+        font-size: 150%;
+        font-weight: 100;
+    }
+    
+    li {
+        height: 35px;  /*Alterar aq */
+        width: 80%; 
+        padding-left: 4%;
+        padding-right: 16%;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        list-style: none;
+        background-color: #cbcbcb;
+        color: #2a2a2a;
+        transition: 0.2s;
+    }
+        
+    li:hover {
+        background-color: #2a2a2a;
+        color: #f1f1f1;
+        transition: 0.5s;
+    }
+    
+    li:active {
+        background-color: #505050;
+        color: #ffffff;
+        transition: 0.3s;
+    }
+    
+    
+    p {
+        background-color: #cbcbcb;
+        height: 10%;
+        padding: 0%;
+        margin: 0%;
+    }
+    
