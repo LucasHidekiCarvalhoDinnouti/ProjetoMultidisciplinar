@@ -42,6 +42,7 @@ class Conexao {
             $this-> sql_error($consulta);
         }
         
+
     }
 
     
@@ -66,15 +67,4 @@ class Conexao {
         else 
             return false;
     }
-
-
-
-
-
-    
-
-    
-
-
-    
 }

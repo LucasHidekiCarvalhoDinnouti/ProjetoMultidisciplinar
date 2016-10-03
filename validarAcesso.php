@@ -1,8 +1,6 @@
 <?php
-session_start();
 
-
-include "../classes/conexao.class.php";
+include "classes/conexao.class.php";
 
 //receber dados do formulário
 if (isset($_POST['usuarioLogin']) && isset($_POST['senhaLogin'])) {
@@ -15,19 +13,15 @@ if (isset($_POST['usuarioLogin']) && isset($_POST['senhaLogin'])) {
     //fazer o SELECT no BD
     $dados = $obj_con->select($logForm);
     
-
-    if ($dados[0] [1] == md5($senForm)) {
-        include '../inc/menuCliente.inc.php';
-        include '../inc/Busca.inc';
-//        header('Location:menuCliente.inc.php');
-
+    if ($dados[0][1] == $senForm) {
+        include 'inc/menuCliente.inc';
+        include 'inc/Busca.inc';
     } else {
-        include '../inc/Login.inc';
+        include 'inc/Login.inc';
         echo 'Validação inválida';
+        print_r($dados);
+        echo $dados[0][1];
     }
-    
-    $_SESSION = $dados;
-
 }
 
 ?>

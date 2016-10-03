@@ -39,22 +39,24 @@ class Conexao {
         if ($stmt) {
             $this->stmt = $stmt;
         } else {
-
-            echo "ERROU";
+            $this-> sql_error($consulta);
         }
         
     }
-    
-    
-  //metodo para executar um SELECT no BD
-     public function Insert($login, $senha, $nome, $endereco, $bairro, $uf){
-         //definir o SELECT
-         $sql = "INSERT INTO Cliente VALUES ('$login', '$senha', '$nome', '$endereco', '$bairro', '$uf')";
-     //executar o INSERT atraves do metodo execSQL
-         $this->execSQL($sql);
 
-         
+    
+    
+
+
+     public function InsertCliente($login, $senha, $nome){
+         //definir o SELECT
+         $sql = "INSERT INTO Cliente VALUES ('$login', '$senha', '$nome')";
+         $this->execSQL($sql);
      }
+    
+
+    
+
 
     
 }
