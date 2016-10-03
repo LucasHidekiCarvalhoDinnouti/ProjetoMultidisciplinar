@@ -1,4 +1,4 @@
-﻿<?php
+<?php
     session_start();
 ?>
 <html>
@@ -12,7 +12,6 @@
 	<div id="pwCliente">Senha:<input type="password" name="senhaLogin" maxlength="20"></div>
 	<br>
 	<input type="submit" value="Entrar" id="btnLogar">
-
   </form>
 </body>
 </html>

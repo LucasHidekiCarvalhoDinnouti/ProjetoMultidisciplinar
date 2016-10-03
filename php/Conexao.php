@@ -5,9 +5,6 @@
 </head>
 <body>
 
-    
-<h1> Teste de conexão </h1>
-
 <?php
     
 function EstabelecerConexao() {
@@ -28,9 +25,6 @@ $conexao = sqlsrv_connect($serverName,$connectInfo);
 if (!$conexao) {
     exit ('Falha na conexão com o banco de dados <br>');
 } 
-
-echo 'Conexão com BD realizada com sucesso. <br>';
-    
 return $conexao;
 }
 ?>

@@ -1,34 +1,51 @@
 <?php
-
-include '../classes/cadastro.class.php';
+include '../classes/conexao.class.php';
 
 
 
 //receber dados do formulario
-
-if(isset ($_POST["nomeCompleto"]) &&
-   isset ($_POST["logCliente"]) &&
-   isset ($_POST["pwCliente"]) &&
-   isset ($_POST["pwConfCliente"]) &&
-   isset ($_POST["endCliente"]) &&
-   isset ($_POST["bairCliente"]) &&
-   isset ($_POST["ufCliente"]))
+if(  isset ($_POST["nomeCompleto"]) &&  isset ($_POST["logCliente"]) && isset ($_POST["pwCliente"]) && isset ($_POST["pwConfCliente"]))
 {
     $nomeCliente      = $_POST['nomeCompleto'];
     $loginCliente     = $_POST['logCliente'];
     $senhaCliente     = $_POST['pwCliente'];
     $senhaConfCliente = $_POST['pwConfCliente'];
 
-    $enderecoCliente  = $_POST['endCliente'];
-    $bairroCliente    = $_POST['bairCliente'];
-    $ufCliente        = $_POST['ufCliente'];
    
-    //instanciar a classe Conexao
+
+   
+if ($senhaCliente == $senhaConfCliente)
+{  
+    $pass = md5($senhaCliente);
     $obj_con = new Conexao('regulus', 'BDGRUPO13', 'BDGRUPO13', '13memo');
-    
-    //fazer o INSERT no BD
-    $dados = $obj_con->Insert($loginCliente, $senhaCliente, $nomeCliente, $enderecoCliente, $bairroCliente, $ufCliente);
+
+
+   if(!$obj_con->haCliente($loginCliente)){ 
+      $dados = $obj_con->InsertCliente($loginCliente, $pass, $nomeCliente);
+       echo "Cadastro feito cm sucess!!<br>";
+      echo "<p><form action='../php/Login.php'><input type='submit' value='Ir para pagina de login'></form></p>";
+    }
+   else{
+      header('Location:../inc/cadastro.inc.php?usuario=IND');
+    }
+
+}else{
+ 
+header('Location:../inc/cadastro.inc.php?usuario=NOK');
+}
 
 }
+
+
+
+
+
+
+    
+    
+
+
+
+
 ?>
 

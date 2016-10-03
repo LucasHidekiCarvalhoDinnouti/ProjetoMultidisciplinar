@@ -53,7 +53,26 @@ class Conexao {
         return $dados;
     }
     
+    public function InsertCliente($login, $senha, $nome){
+         //definir o SELECT
+         $sql = "INSERT INTO Cliente VALUES ('$login', '$senha', '$nome')";
+         $this->execSQL($sql);
+     }
 
+     
+     public function haCliente($nomeUser){
+        $sql = "SELECT COUNT(*) FROM Cliente WHERE loginCliente = '$nomeUser'";
+        $this->execSQL($sql);
+        $linha = sqlsrv_fetch_array($this->stmt, SQLSRV_FETCH_NUMERIC);
+        
+        if ($linha[0] > 0)
+            return true;
+        else 
+            return false;
+    }
+
+    
+    
 }
 
 ?>
