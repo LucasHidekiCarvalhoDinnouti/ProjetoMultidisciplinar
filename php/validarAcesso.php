@@ -15,8 +15,8 @@ if (isset($_POST['usuarioLogin']) && isset($_POST['senhaLogin'])) {
     $dados = $obj_con->select($logForm);
     
     if ($dados[0] [1] == md5($senForm)) {
-        include '../inc/menuCliente.inc.php';
         include '../inc/Busca.inc';
+        include '../inc/menuCliente.inc.php';
 //        header('Location:menuCliente.inc.php');
     } else {
         include '../inc/Login.inc';
@@ -27,21 +27,6 @@ if (isset($_POST['usuarioLogin']) && isset($_POST['senhaLogin'])) {
 }
 
 ?>
-<!--
-
-                  
-     ||     ||    
-     ||     ||    
-     ||     ||    
-     ||     ||      Happy overwatch!!!
-                  
-    ||       ||   
-     |||||||||    
-        ---       
-                  
-
--->
-
 
 
 

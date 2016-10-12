@@ -1,140 +1,192 @@
-   /* #tudo {
-        position: absolute;
-        width: 850px;
-        height: ;
-        left: 30%;
-        top: 5%;
-        background-color: lightgrey;
-    }*/
+#busca {
+    position: fixed;
+    width: 950px;
+    height: 40px;
+    left: 280px;
+    top: 40px;
+    background-color: gray;
+    z-index: 12;
+}
 
-    
-    #busca {
-        position: absolute;
-        width: 903px;
-        height: 40px;
-        left: 280px;
-        top: 40px;
-        background-color: gray;
 
-    }
-    
-    #pesquisa {        
-        position: absolute;
-        left: 3px;
-        top: 5%;
-        width: 90%;
-        height: 90%;
+body{
+    background-color: white;
+}
+
+#pesquisa {        
+    position: absolute;
+    left: 3px;
+    top: 5%;
+    width: 90%;
+    height: 90%;
 } 
     
-    #btnpesquisa{
-        position: absolute;
-        right: -60px;
-        top: 5%;
-        width: 15%;
-        list-style: none;
-        background-color: #cbcbcb;
-        color: #2a2a2a;
-        transition: 0.2s;
-        border: none;
-        height: 25px;
-    }
-    
-    #btnpesquisa:hover{        
-        background-color: #2a2a2a;
-        color: #f1f1f1;
-        font-size = 1px;
-        transition: 0.5s;
-    }
-    
-    #btnpesquisa:active{        
-        background-color: #505050;
-        color: #ffffff;
-        transition: 0.3s;
-    }
-    
-    #lista{
-        position: absolute;
-        width: 400px;
-        right: 5%;
-        border: 1px solid black;
-    }
-    
-    #formulario{    
-        position: absolute;
-        left: 1%;
-        top: 15%;
-        width: 90%;
-        height: 70%;
-    }
-    
-    .ItemBusca {
-        position: relative;
-        margin-top: 25px;
-        font-size: 20px;
-        right: 40px;
-        width: 730px;
-        height: 230px;
-        margin-left: 0;
-        padding-left: 4%;
-        padding-right: 16%;
-        padding-top: 12px;
-        padding-bottom: 12px;
-        list-style: none;
-        background-color: #cbcbcb;
-        color: #2a2a2a;
-        transition: 0.2s;
-        overflow-x: hidden;
-      
-        
-    }    
-    
-    .ItemBusca:hover {
-        font-size: 25px;
-        list-style: none;
-        background-color: #cbcbcb;
-        color: #2a2a2a;
-        transition: 0.2s;
-        /*overflow: scroll;*/
-        overflow-x: hidden;
+#btnpesquisa{
+    position: absolute;
+    right: -60px;
+    top: 5%;
+    width: 15%;
+    list-style: none;
+    background-color: #cbcbcb;
+    color: #2a2a2a;
+    transition: 0.2s;
+    border: none;
+    height: 25px;
+}
 
-        
-    }    
-    
-    .ItemBusca:active {
-        font-size: 25px;
-        list-style: none;
-        background-color: #cbcbcb;
-        color: #2a2a2a;
-        transition: 0.2s;
-        /*overflow: scroll;*/
-        overflow-x: hidden;
-        
-    } 
-    
-    .Busca {
-        position: absolute;
-        top: 1%;
-        left: 0%;
-        width: 96%;
-        height: 80%;
-        
-    }
-    
-    .nomeEst {
-        font-family: calibri;
-        font-size: 35px;
-        font-weight: 100;
-    }
-    
-    p {
-        height: 28%;
-    }
+#btnpesquisa:hover{        
+    background-color: #2a2a2a;
+    color: #f1f1f1;
+    font-size = 1px;
+    transition: 0.5s;
+}
 
-    #imgEst{
-      width: 200px;
-      height: 200px;
-      margin-left: -25px;
+#btnpesquisa:active{        
+    background-color: #505050;
+    color: #ffffff;
+    transition: 0.3s;
+}
 
-      margin-right: 10px;
+#formulario{    
+    position: absolute;
+    left: 1%;
+    top: 15%;
+    width: 90%;
+    height: 70%;
+}
 
-    }
+.ItemBusca {
+    position: relative;
+    margin-top: 25px;
+    font-size: 20px;
+    right: 40px;
+    width: 730px;
+    height: 230px;
+    margin-left: 0;
+    padding-left: 4%;
+    padding-right: 16%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    list-style: none;
+    background-color: white;
+    color: #2a2a2a;
+    transition: 0.2s;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+
+}    
+
+.ItemBusca:hover {
+    font-size: 25px;
+    list-style: none;
+    background-color: #cbcbcb;
+    color: #2a2a2a;
+    transition: 0.2s;
+    /*overflow: scroll;*/
+    overflow-x: hidden;
+
+
+}    
+
+.ItemBusca:active {
+    font-size: 25px;
+    list-style: none;
+    background-color: #cbcbcb;
+    color: #2a2a2a;
+    transition: 0.2s;
+    /*overflow: scroll;*/
+    overflow-x: hidden;
+
+} 
+
+.Busca {
+    position: absolute;
+    top: 70px;
+    margin-left: 272px;
+    z-index: 10;
+    width: 1100px;
+    height: 62%;
+    overflow-y: scroll;
+
+}
+
+.nomeEst {
+    font-family: calibri;
+    font-size: 35px;
+    font-weight: 100;
+}
+
+p {
+    height: 28%;
+}
+
+#imgEst{
+  width: 200px;
+  height: 200px;
+  margin-left: -25px;
+
+  margin-right: 10px;
+
+
+}
+
+#gambiarra {
+  position: fixed;
+  height: 40px;
+  width: 950px;
+  top: 0px;
+  
+  left: 280px;
+  z-index: 4;
+}
+
+#gambiarra2 {
+    position: fixed;
+    width: 950px;
+    height: 40px;
+    background-color: white;
+    top: 90px;
+    margin-left: 272px;
+    z-index: 13;
+}
+
+
+select {
+   width: 120px;
+   height: 30px;
+   border-radius: 0px;
+   background-color: #cbcbcb;
+   border-width: 0px;
+   transition: 0.5s;
+}
+
+
+select:hover{
+    background-color: #2a2a2a;
+    color: #f1f1f1;
+    transition: 0.5s;
+}
+
+
+
+#gamb {
+  height: 0%;
+  width: 20px;
+}
+
+
+#qtVagas{
+ position: absolute;
+ margin-top: -230px;
+ margin-left: 450px;
+
+}
+
+
+h4{
+   font-weight: 100; 
+    font-size: 36px;
+}
+
+
